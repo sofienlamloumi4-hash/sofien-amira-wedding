@@ -23,6 +23,7 @@
     "typescript": "^5"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.3.3"
+    "@tailwindcss/postcss": "^4.3.3",
+    "eslint": "^10.8.0"
   }
 }
