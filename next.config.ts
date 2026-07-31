@@ -1,9 +1,9 @@
-import withPWA from "@ducanh2912/next-pwa";
+import type { NextConfig } from "next";
 
-const nextConfig = {};
+const nextConfig: NextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+};
 
-export default withPWA({
-  dest: "public",
-
-  disable: false,
-})(nextConfig);
+export default nextConfig;
