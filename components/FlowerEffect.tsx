@@ -1,55 +1,51 @@
 "use client";
-
 import { motion } from "framer-motion";
-
-const flowers = ["🌸", "🌹", "🌷", "✨", "🤍"];
-
+import { useMemo } from "react";
+const flowers = [  "🤍"];
 export default function FlowerEffect() {
+  const flowersData = useMemo(
+    () =>
+      Array.from({ length: 35 }, (_, i) => ({
+        id: i,
+        left: Math.random() * 100,
+        size: 5 + Math.random() * 6,
+        duration: 8 + Math.random() * 7,
+        delay: Math.random() * 8,
+        moveX: -80 + Math.random() * 160,
+        rotate: 180 + Math.random() * 360,
+      })),
+    [],
+  );
   return (
-    <div
-      className="
-fixed
-top-0
-left-0
-w-full
-h-screen
-overflow-hidden
-pointer-events-none
-z-50
-"
-    >
-      {Array.from({ length: 25 }).map((_, i) => (
+    <div className="fixed inset-0 pointer-events-none overflow-hidden z-40">
+      {" "}
+      {flowersData.map((flower) => (
         <motion.div
-          key={i}
-          initial={{
-            y: -100,
-            x: `${Math.random() * 100}vw`,
-            opacity: 0,
+          key={flower.id}
+          className="absolute select-none"
+          style={{
+            left: `${flower.left}%`,
+            top: "-50px",
+            fontSize: `${flower.size}px`,
           }}
+          initial={{ y: -50, x: 0, opacity: 0, rotate: 0 }}
           animate={{
             y: "110vh",
-
-            rotate: 360,
-
+            x: [0, flower.moveX, -flower.moveX / 2, flower.moveX / 3],
+            rotate: flower.rotate,
             opacity: [0, 1, 1, 0],
           }}
           transition={{
-            duration: 8 + Math.random() * 5,
-
-            delay: Math.random() * 5,
-
+            duration: flower.duration,
+            delay: flower.delay,
             repeat: Infinity,
-
             ease: "linear",
           }}
-          className="
-absolute
-text-3xl
-"
         >
-          {flowers[i % flowers.length]}
+          {" "}
+          {flowers[flower.id % flowers.length]}{" "}
         </motion.div>
-      ))}
+      ))}{" "}
     </div>
   );
 }

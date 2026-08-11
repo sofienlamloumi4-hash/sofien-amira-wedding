@@ -127,3 +127,17 @@ background-position:
 }
 
 }
+.wedding-background {
+  animation: weddingZoom 25s ease-in-out infinite alternate;
+  transform-origin: center center;
+}
+
+@keyframes weddingZoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(2.15);
+  }
+}
