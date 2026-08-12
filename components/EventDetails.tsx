@@ -21,7 +21,7 @@ export default function EventDetails() {
       {" "}
       {/* صورة الخلفية */}{" "}
       <img
-        src="/assets/event-bg.jpg"
+        src="/assets/event-bg.webp"
         alt=""
         className=" absolute inset-0 w-full h-full object-cover "
       />{" "}

@@ -37,7 +37,7 @@ overflow-hidden
       >
         {/* صورة الخلفية */}
         <img
-          src="/assets/background.jpg"
+          src="/assets/background.webp"
           alt=""
           className="absolute inset-0 w-full h-full object-cover wedding-background"
         />

@@ -25,7 +25,7 @@ export default function Countdown() {
       {" "}
       {/* صورة الخلفية */}{" "}
       <img
-        src="/assets/countdown-bg.jpg"
+        src="/assets/countdown-bg.webp"
         alt=""
         className=" absolute inset-0 w-full h-full object-cover "
       />{" "}

@@ -28,7 +28,7 @@ export default function Story() {
       {" "}
       {/* صورة الخلفية */}{" "}
       <img
-        src="/assets/story-bg.jpg"
+        src="/assets/story-bg.webp"
         alt=""
         className=" absolute inset-0 w-full h-full object-cover "
       />{" "}

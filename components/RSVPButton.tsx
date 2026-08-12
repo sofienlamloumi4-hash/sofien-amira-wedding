@@ -10,7 +10,7 @@ export default function RSVPButton() {
       {" "}
       {/* صورة الخلفية */}{" "}
       <img
-        src="/assets/rsvp-bg.jpg"
+        src="/assets/rsvp-bg.webp"
         alt=""
         className=" absolute inset-0 w-full h-full object-cover "
       />{" "}
@@ -32,7 +32,6 @@ export default function RSVPButton() {
           {" "}
           يسعدنا حضوركم ومشاركتكم أجمل لحظات حياتنا{" "}
         </p>{" "}
-       
       </div>{" "}
       <footer
         className="
