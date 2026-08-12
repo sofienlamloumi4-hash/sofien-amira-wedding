@@ -5,7 +5,7 @@ const flowers = [  "🤍"];
 export default function FlowerEffect() {
   const flowersData = useMemo(
     () =>
-      Array.from({ length: 35 }, (_, i) => ({
+      Array.from({ length: 12 }, (_, i) => ({
         id: i,
         left: Math.random() * 100,
         size: 5 + Math.random() * 6,

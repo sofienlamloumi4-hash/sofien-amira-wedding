@@ -9,7 +9,7 @@ export default function OpeningScreen() {
   const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
-    const images = ["/assets/aa.jpg", "/assets/bb.jpg", "/assets/cc.png"];
+    const images = ["/assets/aa.webp", "/assets/bb.webp", "/assets/cc.webp"];
 
     let count = 0;
 
@@ -97,7 +97,7 @@ export default function OpeningScreen() {
           {/* الجناح الأيسر */}
           <img
             id="leftPanel"
-            src="/assets/aa.jpg"
+            src="/assets/aa.webp"
             alt=""
             className="envelope-panel left-panel"
           />
@@ -105,7 +105,7 @@ export default function OpeningScreen() {
           {/* الجناح الأيمن */}
           <img
             id="rightPanel"
-            src="/assets/bb.jpg"
+            src="/assets/bb.webp"
             alt=""
             className="envelope-panel right-panel"
           />
@@ -117,7 +117,11 @@ export default function OpeningScreen() {
             aria-label="فتح الدعوة"
             className="seal-button"
           >
-            <img src="/assets/cc.png" alt="فتح الدعوة" className="seal-image" />
+            <img
+              src="/assets/cc.webp"
+              alt="فتح الدعوة"
+              className="seal-image"
+            />
 
             <span className="seal-text  ">افتح الدعوة</span>
           </button>

@@ -23,7 +23,7 @@ export default function MusicPlayer() {
 
   return (
     <>
-      <audio ref={audioRef} src="/music/wedding.mp3" loop />
+      <audio ref={audioRef} src="/music/wedding.mp3" loop preload="none" />
 
       <motion.button
         onClick={toggleMusic}
