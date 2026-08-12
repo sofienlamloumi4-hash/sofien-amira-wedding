@@ -28,23 +28,11 @@ export default function RSVPButton() {
           {" "}
           هل ستشاركوننا فرحتنا؟{" "}
         </motion.h2>{" "}
-        <p className=" text-gray-600 mb-10 text-lg ">
+        <p className=" text-gray-600  text-lg ">
           {" "}
           يسعدنا حضوركم ومشاركتكم أجمل لحظات حياتنا{" "}
         </p>{" "}
-        <motion.a
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          whileHover={{ scale: 1.08 }}
-          href={`https://wa.me/?text=${message}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className=" inline-flex items-center gap-3 bg-[#25D366] text-white px-10 md:px-12 py-5 rounded-full text-lg md:text-xl shadow-2xl transition "
-        >
-          {" "}
-          <MessageCircleHeart size={28} /> تأكيد الحضور{" "}
-        </motion.a>{" "}
+       
       </div>{" "}
       <footer
         className="

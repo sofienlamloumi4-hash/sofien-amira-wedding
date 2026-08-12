@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export default function OpeningScreen() {
   const [loaded, setLoaded] = useState(false);
@@ -140,8 +141,7 @@ export default function OpeningScreen() {
         <p className="text-[#9d7b17] tracking-[0.35em] text-xs mb-3">
           WEDDING INVITATION
         </p>
-
-        <h1 className="text-3xl md:text-5xl text-[#AD1E02] font-serif">
+        <h1 className="text-3xl md:text-5xl text-[#333E91] font-serif">
           سفيان <span className="text-[#AD1E02]">♥</span> أميرة
         </h1>
 

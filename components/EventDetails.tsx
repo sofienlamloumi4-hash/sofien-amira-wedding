@@ -4,11 +4,16 @@ import { CalendarDays, Clock, MapPin } from "lucide-react";
 const details = [
   {
     icon: <CalendarDays size={40} />,
-    title: "التاريخ",
-    value: "24 أكتوبر 2026",
+    title: "العشــاء",
+    value: "24 أكتوبر 2026 ",
+  },
+  {
+    icon: <CalendarDays size={40} />,
+    title: "الزفــاف",
+    value: "25 أكتوبر 2026 ",
   },
   { icon: <Clock size={40} />, title: "الوقت", value: "18:00" },
-  { icon: <MapPin size={40} />, title: "المكان", value: "قاعة الحفل" },
+  { icon: <MapPin size={40} />, title: "المكان", value: " المحارزية - العلا" },
 ];
 export default function EventDetails() {
   return (

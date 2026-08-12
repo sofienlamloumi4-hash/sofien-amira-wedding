@@ -47,6 +47,48 @@ overflow-hidden
 
         {/* المحتوى */}
         <div className="relative z-10">
+          {/* البسملة */}
+          <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 1.5,
+              delay: 0.5,
+            }}
+            className="mb-20"
+          >
+            <p
+              dir="rtl"
+              className="
+        text-4xl
+        sm:text-4xl
+        md:text-5xl
+        font-serif
+        font-bold
+        text-[#57103C]
+        drop-shadow-[0_2px_5px_rgba(0,0,0,0.2)]
+      "
+            >
+              بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ
+            </p>
+            <p
+              dir="rtl"
+              className="
+        text-2xl
+        sm:text-4xl
+        md:text-5xl
+        font-serif
+        font-bold
+        text-[#57103C]
+        drop-shadow-[0_2px_5px_rgba(0,0,0,0.2)]
+      "
+            >
+              وَمِنْ آَيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا
+              لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً
+              إِنَّ فِي ذَلِكَ لَآَيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ﴿21﴾ ***سورة
+              الروم***
+            </p>
+          </motion.div>
           <motion.p
             initial={{
               opacity: 0,
@@ -60,7 +102,7 @@ overflow-hidden
             className="
 text-lg
 mb-8
-text-gray-500 
+text-gray-1000 
 "
           >
             دعوة زفاف
@@ -79,7 +121,7 @@ text-gray-500
             className=" flex items-center justify-center gap-2 sm:gap-4 md:gap-8 px-4 whitespace-nowrap "
           >
             {" "}
-            <h1 className=" text-4xl sm:text-5xl md:text-8xl font-bold text-[#c9a227] ">
+            <h1 className=" text-4xl sm:text-5xl md:text-8xl font-bold text-[#CC9110] ">
               {" "}
               سفيان{" "}
             </h1>{" "}
@@ -87,7 +129,7 @@ text-gray-500
               {" "}
               ❤️{" "}
             </span>{" "}
-            <h1 className=" text-4xl sm:text-5xl md:text-8xl font-bold text-[#c9a227] ">
+            <h1 className=" text-4xl sm:text-5xl md:text-8xl font-bold text-[#CC9110] ">
               {" "}
               أميرة{" "}
             </h1>{" "}
@@ -102,8 +144,6 @@ py-0
 text-center
 "
       >
-
-
         <Countdown />
       </section>
       <Story />
@@ -115,12 +155,9 @@ py-0
 text-center
 "
       >
-   
-
         <RSVPButton />
       </section>
       <MusicPlayer />
-
     </main>
   );
 }
