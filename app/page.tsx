@@ -156,7 +156,7 @@ overflow-hidden
               الْوُصُول، صلاةً تَدُومُ وَلا تَزُول
             </p>
           </motion.div>
-          <div className="-translate-y-12">
+          <div className="-translate-y-16">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -189,7 +189,7 @@ overflow-hidden
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
-              className="flex items-center justify-center gap-3 sm:gap-5 md:gap-8 px-4 whitespace-nowrap"
+              className="flex items-center justify-center gap-3 sm:gap-5 md:gap-8 px-4 whitespace-nowrap translate-y-4"
             >
               <h1 className="text-5xl sm:text-6xl md:text-8xl font-normal text-[#CC9110]">
                 سفيان

@@ -132,7 +132,7 @@ export default function OpeningScreen() {
       <div
         className={`
           absolute
-           top-[20%]
+           top-[29%]
           left-0
           right-0
           text-center
@@ -215,15 +215,14 @@ export default function OpeningScreen() {
         .seal-button {
           position: absolute;
           left: 50%;
-          top: 50%;
+          top: 54%;
 
-          width: 150px;
-          height: 150px;
+          width: 170px;
+          height: 170px;
 
           transform: translate(-50%, -50%);
 
           z-index: 100;
-
           border: none;
           background: transparent;
           cursor: pointer;
@@ -300,9 +299,9 @@ export default function OpeningScreen() {
           }
 
           .seal-button {
-            width: 115px;
-            height: 115px;
-
+            width: 130px;
+            height: 130px;
+            top: 54%;
             z-index: 100;
           }
 
