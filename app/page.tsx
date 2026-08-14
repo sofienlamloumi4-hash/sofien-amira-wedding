@@ -160,7 +160,7 @@ overflow-hidden
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className=" text-xs md:text-lg whitespace-nowrap font-semibold"
+            className=" text-sm md:text-xl whitespace-nowrap font-semibold"
           >
             بعد إهداكم عاطر التحية وأزكى السلام
           </motion.p>
@@ -168,7 +168,7 @@ overflow-hidden
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className=" text-xs md:text-lg whitespace-nowrap font-semibold"
+            className=" text-sm md:text-xl whitespace-nowrap font-semibold"
           >
             يتشرف السيد عبد الستار لملومي والمرحوم عبد السلام جبلاوي
           </motion.p>
@@ -176,7 +176,7 @@ overflow-hidden
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
-            className="text-xs md:text-lg whitespace-nowrap font-semibold"
+            className="text-sm md:text-xl whitespace-nowrap font-semibold"
           >
             بدعوتكم لحضور ومشاركة فرحتهم بمناسبة زفاف ابنيهما
           </motion.p>
