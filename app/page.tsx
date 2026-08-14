@@ -84,7 +84,7 @@ overflow-hidden
         <div className="absolute inset-0 bg-black/10" />
 
         {/* المحتوى */}
-        <div className="relative z-10">
+        <div className="relative z-10 -translate-y-14">
           {/* البسملة */}
           <motion.div
             initial={{ opacity: 0, y: -30 }}
@@ -156,57 +156,52 @@ overflow-hidden
               الْوُصُول، صلاةً تَدُومُ وَلا تَزُول
             </p>
           </motion.div>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className=" text-sm md:text-xl whitespace-nowrap font-semibold"
-          >
-            بعد إهداكم عاطر التحية وأزكى السلام
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className=" text-sm md:text-xl whitespace-nowrap font-semibold"
-          >
-            يتشرف السيد عبد الستار لملومي والمرحوم عبد السلام جبلاوي
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1 }}
-            className="text-sm md:text-xl whitespace-nowrap font-semibold"
-          >
-            بدعوتكم لحضور ومشاركة فرحتهم بمناسبة زفاف ابنيهما
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2 }}
-            className=" text-lg mb-8 text-gray-500 "
-          ></motion.p>{" "}
-          {/* أسماء العروسين في سطر واحد */}{" "}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className=" flex items-center justify-center gap-3 sm:gap-5 md:gap-8 px-4 whitespace-nowrap "
-          >
-            {" "}
-            <h1 className="text-5xl sm:text-6xl md:text-8xl font-normal text-[#CC9110] ">
-              {" "}
-              سفيان{" "}
-            </h1>{" "}
-            <span className=" text-2xl sm:text-4xl md:text-6xl ">
-              {" "}
-              ❤️{" "}
-            </span>{" "}
-            <h1 className=" text-5xl sm:text-6xl md:text-8xl font-normal text-[#CC9110] ">
-              {" "}
-              أميرة{" "}
-            </h1>{" "}
-          </motion.div>{" "}
+          <div className="-translate-y-12">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="text-sm md:text-xl whitespace-nowrap font-semibold"
+            >
+              بعد إهداكم عاطر التحية وأزكى السلام
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              className="text-sm md:text-xl whitespace-nowrap font-semibold"
+            >
+              يتشرف السيد عبد الستار لملومي والمرحوم عبد السلام جبلاوي
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 }}
+              className="text-sm md:text-xl whitespace-nowrap font-semibold"
+            >
+              بدعوتكم لحضور ومشاركة فرحتهم بمناسبة زفاف ابنيهما
+            </motion.p>
+
+            {/* أسماء العروسين */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="flex items-center justify-center gap-3 sm:gap-5 md:gap-8 px-4 whitespace-nowrap"
+            >
+              <h1 className="text-5xl sm:text-6xl md:text-8xl font-normal text-[#CC9110]">
+                سفيان
+              </h1>
+
+              <span className="text-2xl sm:text-4xl md:text-6xl">❤️</span>
+
+              <h1 className="text-5xl sm:text-6xl md:text-8xl font-normal text-[#CC9110]">
+                أميرة
+              </h1>
+            </motion.div>
+          </div>
         </div>
       </section>
 
