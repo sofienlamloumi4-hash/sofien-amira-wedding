@@ -1,5 +1,5 @@
 "use client";
-
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import OpeningScreen from "@/components/OpeningScreen";
 import Countdown from "@/components/Countdown";
@@ -12,6 +12,21 @@ import FlowerEffect from "@/components/FlowerEffect";
 //import WeddingSeal from "@/components/WeddingSeal";
 
 export default function Home() {
+  const [showArrow, setShowArrow] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setShowArrow(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <main
       className="
@@ -22,6 +37,29 @@ overflow-hidden
     >
       <FlowerEffect />
       <OpeningScreen />
+      {showArrow && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          className="fixed bottom-5 left-1/2 -translate-x-1/2 z-[999] flex flex-col items-center pointer-events-none"
+        >
+          <motion.div
+            animate={{ y: [0, 8, 0] }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="text-[#c9a227] text-3xl"
+          >
+            ↓
+          </motion.div>
+
+          <span className="text-[#c9a227] text-xs mt-1">اسحب للأسفل</span>
+        </motion.div>
+      )}
       <section
         className="
     relative
@@ -60,7 +98,7 @@ overflow-hidden
             <p
               dir="rtl"
               className="
-        text-4xl
+        text-3xl
         sm:text-4xl
         md:text-5xl
         font-serif
@@ -74,7 +112,7 @@ overflow-hidden
             <p
               dir="rtl"
               className="
-        text-2xl
+        text-xl
         sm:text-4xl
         md:text-5xl
         font-serif
@@ -85,27 +123,62 @@ overflow-hidden
             >
               وَمِنْ آَيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا
               لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً
-              إِنَّ فِي ذَلِكَ لَآَيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ﴿21﴾ ***سورة
-              الروم***
+              إِنَّ فِي ذَلِكَ لَآَيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ﴿21﴾
+            </p>
+            <p
+              dir="rtl"
+              className="
+        text-1xl
+        sm:text-4xl
+        md:text-5xl
+        font-serif
+        font-bold
+        text-[#57103C]
+        drop-shadow-[0_2px_5px_rgba(0,0,0,0.2)]
+      "
+            >
+              ***سورة الروم***
+            </p>
+            <p
+              dir="rtl"
+              className="
+        text-1xl
+        sm:text-4xl
+        md:text-5xl
+        font-serif
+        font-bold
+        text-[#57103C]
+        drop-shadow-[0_2px_5px_rgba(0,0,0,0.2)]
+      "
+            >
+              اللهم صَلِ عَلَى سَيِّدِنَا مُحَمَّدٍ أَصْلِ الأُصُول، نُورِ
+              الْجَمَالِ، وَسِرِّ الْقَبُول، أَصْلِ الْكَمَالِ، وَبَابِ
+              الْوُصُول، صلاةً تَدُومُ وَلا تَزُول
             </p>
           </motion.div>
           <motion.p
-            initial={{
-              opacity: 0,
-            }}
-            animate={{
-              opacity: 1,
-            }}
-            transition={{
-              duration: 2,
-            }}
-            className="
-text-lg
-mb-8
-text-gray-1000 
-"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className=" text-xs md:text-lg whitespace-nowrap font-semibold"
           >
-            دعوة زفاف
+            بعد إهداكم عاطر التحية وأزكى السلام
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className=" text-xs md:text-lg whitespace-nowrap font-semibold"
+          >
+            يتشرف السيد عبد الستار لملومي والمرحوم عبد السلام جبلاوي
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+            className="text-xs md:text-lg whitespace-nowrap font-semibold"
+          >
+            بدعوتكم لحضور ومشاركة فرحتهم بمناسبة زفاف ابنيهما
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}

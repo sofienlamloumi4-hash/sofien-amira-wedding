@@ -9,7 +9,7 @@ export default function OpeningScreen() {
   const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
-    const images = ["/assets/aa.webp", "/assets/bb.webp", "/assets/cc.webp"];
+    const images = ["/assets/aa.jpg", "/assets/bb.jpg", "/assets/cc.webp"];
 
     let count = 0;
 
@@ -97,7 +97,7 @@ export default function OpeningScreen() {
           {/* الجناح الأيسر */}
           <img
             id="leftPanel"
-            src="/assets/aa.webp"
+            src="/assets/aa.jpg"
             alt=""
             className="envelope-panel left-panel"
           />
@@ -105,7 +105,7 @@ export default function OpeningScreen() {
           {/* الجناح الأيمن */}
           <img
             id="rightPanel"
-            src="/assets/bb.webp"
+            src="/assets/bb.jpg"
             alt=""
             className="envelope-panel right-panel"
           />
