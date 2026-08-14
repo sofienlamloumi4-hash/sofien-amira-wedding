@@ -145,7 +145,7 @@ export default function OpeningScreen() {
         <p className="text-[#9d7b17] tracking-[0.35em] text-xs mb-3">
           WEDDING INVITATION
         </p>
-        <h1 className="text-3xl md:text-5xl text-[#333E91] font-serif">
+        <h1 className=" text-5xl sm:text-6xl md:text-8xl font-normal text-[#333E91] ">
           سفيان <span className="text-[#AD1E02]">♥</span> أميرة
         </h1>
 

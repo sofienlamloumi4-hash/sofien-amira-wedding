@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import { Tajawal } from "next/font/google";
 import "./globals.css";
+import { Amiri } from "next/font/google";
 
+const amiri = Amiri({
+  subsets: ["arabic"],
+  weight: ["400", "700"],
+  display: "swap",
+});
 const tajawal = Tajawal({
   subsets: ["arabic"],
 
@@ -23,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={tajawal.className}>{children}</body>
+      <body className={amiri.className}>{children}</body>
     </html>
   );
 }

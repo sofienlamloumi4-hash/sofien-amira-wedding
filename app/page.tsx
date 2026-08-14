@@ -191,10 +191,10 @@ overflow-hidden
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className=" flex items-center justify-center gap-2 sm:gap-4 md:gap-8 px-4 whitespace-nowrap "
+            className=" flex items-center justify-center gap-3 sm:gap-5 md:gap-8 px-4 whitespace-nowrap "
           >
             {" "}
-            <h1 className=" text-4xl sm:text-5xl md:text-8xl font-bold text-[#CC9110] ">
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-normal text-[#CC9110] ">
               {" "}
               سفيان{" "}
             </h1>{" "}
@@ -202,12 +202,11 @@ overflow-hidden
               {" "}
               ❤️{" "}
             </span>{" "}
-            <h1 className=" text-4xl sm:text-5xl md:text-8xl font-bold text-[#CC9110] ">
+            <h1 className=" text-5xl sm:text-6xl md:text-8xl font-normal text-[#CC9110] ">
               {" "}
               أميرة{" "}
             </h1>{" "}
           </motion.div>{" "}
-          <p className=" mt-10 text-xl ">24 أكتوبر 2026</p>
         </div>
       </section>
 
