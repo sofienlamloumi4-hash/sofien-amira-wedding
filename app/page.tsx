@@ -172,7 +172,8 @@ overflow-hidden
               transition={{ duration: 1, delay: 0.5 }}
               className="text-sm md:text-xl whitespace-nowrap font-semibold"
             >
-              يتشرف السيد عبد الستار لملومي والمرحوم عبد السلام جبلاوي
+              تتشرف عائلة السيد عبد الستار لملومي وعائلة المرحوم عبد السلام
+              جبلاوي
             </motion.p>
 
             <motion.p
@@ -191,13 +192,13 @@ overflow-hidden
               transition={{ duration: 1 }}
               className="flex items-center justify-center gap-3 sm:gap-5 md:gap-8 px-4 whitespace-nowrap translate-y-4"
             >
-              <h1 className="text-5xl sm:text-6xl md:text-8xl font-normal text-[#CC9110]">
+              <h1 className="text-5xl sm:text-6xl md:text-8xl font-normal text-[#57103C]">
                 سفيان
               </h1>
 
               <span className="text-2xl sm:text-4xl md:text-6xl">❤️</span>
 
-              <h1 className="text-5xl sm:text-6xl md:text-8xl font-normal text-[#CC9110]">
+              <h1 className="text-5xl sm:text-6xl md:text-8xl font-normal text-[#57103C]">
                 أميرة
               </h1>
             </motion.div>
